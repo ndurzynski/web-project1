@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>World map | Lantern quest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+      <p class="site-name">Lantern quest</p>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="map.html" aria-current="page">World map</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <h1>World map</h1>
+      <p>Start at the market, then visit the cottage.</p>
+      <div class="map-board">
+        <section class="card">
+          <h2>Harbor</h2>
+          <p>This is where the story starts.</p>
+          <a href="index.html">Return to the harbor</a>
+        </section>
+        <section class="card checkpoint">
+          <h2>Market</h2>
+          <p>Look for a lantern in the stalls.</p>
+          <a href="market.html">Go to the market</a>
+        </section>
+        <section class="card">
+          <h2>Cottage</h2>
+          <p>The keeper can help repair the lantern.</p>
+          <a href="cottage.html">Visit the cottage</a>
+        </section>
+        <section class="card">
+          <h2>Lighthouse</h2>
+          <p>Bring the repaired lantern here.</p>
+          <a href="cottage.html">Prepare the lantern first</a>
+        </section>
+      </div>
+      <section
+        id="signal"
+        class="card signal-panel"
+        tabindex="-1"
+        aria-labelledby="signal-heading"
+      >
+        <h2 id="signal-heading">The ship is safe</h2>
+        <div class="lantern lantern-glass" aria-hidden="true"></div>
+        <p>
+          You put the lantern in the lighthouse window. The ship sees the light
+          and reaches the harbor safely.
+        </p>
+        <p><a href="index.html">Restart the story</a></p>
+      </section>
+      <p>The map links are always open. They do not track your progress.</p>
+    </main>
+    <footer><p>Web Programming Project 1</p></footer>
+  </body>
+</html>
